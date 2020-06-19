@@ -6,6 +6,10 @@ ActiveRecord/Rails integration for multi-tenant databases, in particular the ope
 
 Enables easy scale-out by adding the tenant context to your queries, enabling the database (e.g. Citus) to efficiently route queries to the right database node.
 
+## Lojistic fixes for version 1.0.4
+
+* Fix join issue for Rails 6.0.3 - copied from this un-merged [PR](https://github.com/citusdata/activerecord-multi-tenant/pull/88)
+
 ## Installation
 
 Add the following to your Gemfile:
